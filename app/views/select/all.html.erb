@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="about_texts">
+      <% for n in 1..9 do %>
+      <h1>
+      <%= link_to @hikaris.find(n).name,  @hikaris.find(n).path %>
+      </h1>
+      <div class="result_tables">
+        <%= render @hikaris.find(n).path + "Table" %>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</div>

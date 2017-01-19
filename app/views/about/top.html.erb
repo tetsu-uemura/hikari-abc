@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="about_texts">
+      <h1><i class="glyphicon glyphicon-hand-right"></i> そもそも光回線って？</h1>
+
+      <h2 class="bg-info"><i class="glyphicon glyphicon-ok"></i>光回線とは</h2>
+      <div class="about_text">
+        <p>インターネットにつながるためには、まずプロバイダー(次章で説明)までつながる必要があります。<br>
+          　スマートフォンなどは4G回線などで無線で接続されていますが、ご自宅で利用する場合は安定した有線接続が
+            おすすめです。<br>
+            ここでの有線とはご自宅までの話で、
+            無線LANルーターを利用すれば、Wi-Fi無線の環境を作ることも可能です。<br>
+            また、現在スマートフォンなどの通信は通信量の制限が課せられている場合が多く、
+            動画の視聴やアプリのダウンロード、アップデートなどが困難な状態です。<br>
+            これらのことが通信量の制限がなく高速な光回線が選ばれている理由の１つといえます。<br>
+        </p>
+      </div>
+      <div class="about_img">
+        <%= image_tag "net.png", :class => "img-responsive center-block"%>
+      </div>
+      <h2 class="bg-info"><i class="glyphicon glyphicon-ok"></i>光回線のメリットとデメリット</h2>
+      <div class="about_text">
+        <p>
+            光回線は現在のインターネット接続の主流となりつつある回線です。<br>
+            それではなぜ、光回線が主流となりつつあるのでしょうか？<br>
+
+            その理由の一つに圧倒的な通信速度があげられます。<br>
+            従来利用されてきたCATV(ケーブルテレビ)やADSL(電話回線)と比較すると
+            その通信速度はずば抜けています。<br><br>
+
+            しかし、その一方で、料金が高いというデメリットがありました。<br>
+            現在ではコラボレーション光の登場などにより光回線の料金はそれほど高くなくなりました。<br>
+            また携帯電話の割引などを受けることにより、CATV、ADSLと比較してもより安い料金で利用することも可能に
+            なっています。<br>
+          </p>
+        </div>
+        <div class="about_img">
+          <%= image_tag "speed.png", :class => "img-responsive center-block"%>
+        <div class="about_img">
+        <div class="next text-center">
+          <%= link_to(content_tag(:i,'次ページ:「プロバイダーとは」', class: 'glyphicon glyphicon-circle-arrow-right') , provider_path ,class: 'btn btn-default')%>
+        </div>
+    </div>
+  </div>
+</div>

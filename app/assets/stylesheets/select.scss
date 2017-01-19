@@ -1,0 +1,100 @@
+// Place all the styles related to the select controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.hikariColor{
+  color: #F7BD03;
+  font-weight: bold;
+}
+
+.docomo{
+  .dTitle{
+    color: #CD1131;
+    font-weight: bold;
+  }
+
+  h2{
+    background-color:#CD1131;
+    color: #fff;
+  }
+  h3{
+    color: #F7BD03;
+    font-weight: bold;
+  }
+}
+
+.softbank{
+  .bankLogo{
+    color: #AAAFB3;
+    font-weight: 900;
+  }
+  h2{
+    background-color: #231F20;
+    color: #FFD028;
+  }
+  h3{
+    color:#2174ED;
+  }
+}
+
+.au{
+  .auTitle{
+    color: #EB5505;
+    font-weight: bold;
+  }
+  h2{
+    color: #fff;
+    background-color: #EB5505;
+  }
+  h3{
+    color: #EB5505;
+  }
+}
+
+.nuro{
+  h1{
+    font-style: italic;
+    background-color: #000;
+    color: #ffffff;
+  }
+  h2{
+    background-color: #A3D839;
+    color: #fff;
+  }
+}
+
+.commfa{
+  .cTitle{
+    color: #0B3182;
+    font-weight: bold;
+    font-style: italic;
+  }
+  h2{
+    background-color:#FFF000;
+    color: #fff;
+  }
+}
+.sonet{
+  .sonetTitle{
+    color: #DC5994;
+    font-weight: bold;
+  }
+}
+.unext{
+  .uTitle{
+    color: #10ACBE;
+  }
+}
+.ocn{
+  .oTitle{
+    color:#F49700;
+    font-weight: bold;
+  }
+  h2{
+    background-color: #F1000D;
+    color: #fff;
+  }
+}
+
+.formBlock{
+  padding: 0 10px 30px 10px;
+}

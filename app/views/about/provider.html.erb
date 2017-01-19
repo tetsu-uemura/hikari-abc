@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="about_texts">
+      <h1><i class="glyphicon glyphicon-hand-right"></i> プロバイダーとは</h1>
+      <h2 class="bg-info"><i class="glyphicon glyphicon-ok"></i>プロバイダーの役割</h2>
+      <div class="about_text">
+        <p>
+          プロバイダーとは簡単にいえばご自宅の光をインターネットに繋げる事業者のことです。<br>
+          少し細かくお話しすると、プロバイダーと契約しIDとパスワードを受け取り、それを使って接続を行うと、
+          IPアドレスというものを割り当ててもらうことができます。<br>
+          IPアドレスというのはインターネット上の住所のようなものです。<br>
+          仮にIPアドレスがない場合、インターネット上のサーバーはあなたの自宅に
+          WEBページやWEB上のコンテンツを届けることができません。<br>
+        </p>
+      </div>
+
+      <h2 class="bg-info"><i class="glyphicon glyphicon-ok"></i>光コラボレーション</h2>
+      <div class="about_text">
+        <p>
+          これまでは光回線はNTTフレッツ光、プロバイダーはOCN、ぷらら、BIGLOBEなど別々で契約し、
+          請求もバラバラというのが当たり前でした。<br>
+          現在では光コラボレーションというのが始まっています。<br>
+          光回線をこれまでは<br>
+          NTT（フレッツ光） → お客様<br>と提供していましたが、<br>
+          光コラボ：NTT → 事業者 → お客様<br>
+          と提供していこうというものです。<br>
+          詳しくは「回線を選ぶ」の「転用とは」でお話しします。
+        </p>
+      </div>
+      <div class="about_img">
+        <%= image_tag "provider.png", :class => "img-responsive center-block"%>
+      </div>
+      <div class="next text-center">
+        <%= link_to(content_tag(:i,'次ページ:「なぜキャッシュバックがもらえる？」', class: 'glyphicon glyphicon-circle-arrow-right') , cashback_path ,class: 'btn btn-default')%>
+      </div>
+    </div>
+  </div>
+</div>

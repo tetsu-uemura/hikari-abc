@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ひかりABC</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <header>
+      <nav class="navbar-hikari navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <a href="#menu-toggle" class="btn btn-slide" id="menu-toggle"><i class="glyphicon glyphicon glyphicon-th-list"></i></a>
+          <%= link_to "ひかりABC",root_path , class: :top_logo %>
+        </div>
+      </nav>
+    </header>
+    <!-- /#sidebar-wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                <%= link_to(content_tag(:i, '　トップ', class: 'glyphicon glyphicon-home') , root_path) %>
+              </li>
+              <li>
+                <%= link_to "そもそも光回線って？", about_path %>
+                <ul>
+                  <li><%= link_to "光回線とは", about_path %></li>
+                  <li><%= link_to "プロバイダーとは", provider_path %></li>
+                  <li><%= link_to "なぜキャッシュバックがもらえる？", cashback_path %></li>
+                </ul>
+              </li>
+              <li>
+                  <%= link_to "回線を選ぶ", select_path %>
+                  <ul>
+                    <li><%= link_to "光コラボレーションとは", select_path %></li>
+                    <li><%= link_to "回線診断", autoSelection_path %>
+                  </ul>
+              </li>
+              <li>
+                  <span><%= link_to "光回線一覧", all_path %></span>
+                  <ul>
+                    <li><%= link_to "ドコモ光", docomo_path %></li>
+                    <li><%= link_to "SoftBank光", softbank_path %></li>
+                    <li><%= link_to "auひかり", au_path %></li>
+                    <li><%= link_to "NURO光", nuro_path %></li>
+                    <li><%= link_to "コミュファ光", commufa_path %></li>
+                    <li><%= link_to "So-net光", sonet_path %></li>
+                    <li><%= link_to "OCN光", ocn_path %></li>
+                    <li><%= link_to "BIGLOBE光", biglobe_path %></li>
+                    <li><%= link_to "U-NEXT光", unext_path %></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+
+        <%= yield %>
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted text-center">© 2017 Tetsu Uemura. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+
+    </div>
+
+
+    <!-- /#wrapper -->
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+  </body>
+</html>

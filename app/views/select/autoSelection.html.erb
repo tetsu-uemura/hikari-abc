@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="about_texts auto_form">
+      <h1><i class="glyphicon glyphicon-hand-right"></i> 回線診断</h1>
+      <%= form_tag result_path do%>
+      <div class="formBlock">
+        <div class="about_text">
+          <div class="row">
+            <h3>ご家族の携帯電話の台数を選択してください。</h3>
+              <div class="col-lg-2 col-xs-6">
+                <%= label_tag(:docomo, "ドコモ") %>
+                <%= select_tag(:numberOfDocomo, options_for_select([0,1,2,3,4,5,6]), class: "form-control") %>
+              </div>
+              <div class="col-lg-2 col-xs-6">
+                <%= label_tag(:softbank, "SoftBank") %>
+                <%= select_tag(:numberOfSoftBank, options_for_select([0,1,2,3,4,5,6]), class: "form-control") %>
+              </div>
+              <div class="col-lg-2 col-xs-6">
+                <%= label_tag(:au, "au") %>
+                <%= select_tag(:numberOfAu, options_for_select([0,1,2,3,4,5,6]), class: "form-control") %>
+              </div>
+              <div class="col-lg-2 col-xs-6">
+                <%= label_tag(:ymobile, "Y!mobile") %>
+                <%= select_tag(:numberOfYmobile, options_for_select([0,1,2,3,4,5,6]), class: "form-control") %>
+              </div>
+              <div class="col-lg-2 col-xs-6">
+                <%= label_tag(:sim, "SIMフリー") %>
+                <%= select_tag(:numberOfSIM, options_for_select([0,1,2,3,4,5,6]), class: "form-control") %>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="formBlock">
+        <div class="about_text">
+          <div class="row">
+            <h3>現在のご自宅のネット環境について入力してください。</h3>
+            <div class="col-xs-6">
+              <%= label_tag(:flets, "フレッツ光") %>
+              <%= select_tag(:fletsOrNot, options_for_select(["加入なし","加入中"]), class: "form-control") %>
+            </div>
+            <div class="col-xs-6">
+              <%= label_tag(:provider, "プロバイダー") %>
+              <%= select_tag(:provider, options_for_select(@provider), class: "form-control") %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formBlock">
+        <div class="about_text">
+          <div class="row">
+            <h3>ご希望のオプションについて入力してください。</h3>
+            <div class="col-xs-6">
+              <%= label_tag(:tel, "固定電話") %>
+              <%= select_tag(:telOrNot, options_for_select(["利用する","利用しない"]), class: "form-control") %>
+            </div>
+            <div class="col-xs-6">
+              <%= label_tag(:tv, "ひかりテレビ") %>
+              <%= select_tag(:tvOrNot, options_for_select(["利用しない","利用する"]), class: "form-control") %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formBlock">
+        <div class="about_text">
+          <div class="row">
+            <h3>ご自宅について入力してください。</h3>
+              <div class="col-xs-6">
+                <%= label_tag(:type, "タイプ") %>
+                <%= select_tag(:type, options_for_select(["戸建タイプ","マンションタイプ"]), class: "form-control") %>
+              </div>
+              <div class="col-xs-6">
+                <%= label_tag(:area, "お住いの地域") %>
+                <%= select_tag(:area, options_for_select(["関東","中部","その他"]), class: "form-control") %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form_btn">
+          <%= submit_tag "診断" , class: "form-control" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

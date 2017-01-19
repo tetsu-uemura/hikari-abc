@@ -1,0 +1,123 @@
+
+
+  <!-- Wrapper for slides -->
+<div class="top_main">
+    <h3>自宅でネットを始めるなら</h3>
+    <h1>ひかりABCで簡単に回線検索。</h1>
+    <%= image_tag "plug.png",:class => "center-block main-icon" %>
+    <p>あなたの環境を入力するだけで最適な光回線を見つけられます。</p>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <%= image_tag "main.png",:class => "center-block img-responsive carea" %>
+    <h2 class="carea_comment">人気９社の中から最適な光回線をお選びいただけます。</h2>
+
+    <div class="search center-block">
+        <%= image_tag "pc.png",:class => "center-block" %>
+        <div class="text center-block">
+          <p>
+            お持ちの携帯キャリアや地域などを選ぶだけで最適な光回線を見つけられる、
+            ひかりABC「回線診断」。<br>
+            ランキング形式で表示されるから見比べることも可能。
+          </p>
+
+        </div>
+        <div>
+          <div class="to_auto center-block">
+            <a href="<%= autoSelection_path %>">
+              <button class="btn btn_to_auto">
+                <h3 class="btn_to_auto_text"><i class="glyphicon glyphicon-circle-arrow-right"></i>回線診断へ</h3>
+              </button>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="about-content col-sm-4 col-xs-12 center-block">
+        <h3 class="text-success text-center"><span class="big">A</span></h3>
+        <div class="text-a abc">
+          <p>まずは光回線について徹底解説。
+            データ通信量の多いこの時代・・・<br>
+            使い放題の光回線は必須ですね。
+            プロバイダーやキャッシュバックが
+            なぜもらえるのかなど、
+            分かりやすく解説していきます。
+          </p>
+        </div>
+      </div>
+      <div class="about-content col-sm-4 col-xs-12 center-block">
+        <h3 class="text-info text-center"><span class="big">B</span></h3>
+        <div class="text-b abc">
+          <p>
+            いろいろ調べるのは面倒・・・<br>
+            そんな方にもおすすめ。
+            お持ちの携帯電話、ご契約中の光回線などを入力するだけで、最適なインターネット回線を診断できます。<br>
+            提案された回線だけをチェックすれば簡単に回線をお選びいただけます。
+          </p>
+        </div>
+
+      </div>
+      <div class="about-content col-sm-4 col-xs-12 center-block">
+        <h3 class="text-warning text-center"><span class="big">C</span></h3>
+        <div class="text-c abc">
+          <p>
+            回線を選んだらあとは契約。
+            キャッシュバックが多いなど、条件の良い代理店が、回線案内ページに表示されています。
+            細かい料金や解約時の違約金なども代理店で聞けるので代理店ページへ進みましょう。
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="btn-contents"><i class="glyphicon glyphicon-hand-right"></i> コンテンツ</h1>
+    <div class="row about-contents">
+      <div class="about-content col-sm-4 col-xs-12">
+        <a href="<%= about_path %>">
+          <div class="about_btn btn-a">
+            <button class="btn btn-success">
+              <div class="btn_text">
+                <h3>そもそも光回線って？</h3>
+                <ul>
+                  <li>・光回線とは</li>
+                  <li>・プロバイダーとは</li>
+                  <li>・なぜキャッシュバックがもらえる？</li>
+                </ul>
+              </div>
+            </button>
+        </div>
+        </a>
+      </div>
+      <div class="about-content col-sm-4 col-xs-12">
+        <a href="<%= select_path %>">
+          <div class="about_btn btn-b">
+            <button class="btn btn-info">
+              <div class="btn_text">
+                <h3>回線を選ぶ</h3>
+                <ul>
+                  <li>・光コラボレーションとは</li>
+                  <li>・回線診断</li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </a>
+      </div>
+      <div class="about-content col-sm-4 col-xs-12">
+        <a href="<%= all_path %>">
+          <div class="about_btn btn-c">
+            <button class="btn btn-warning">
+              <div class="btn_text">
+                <h3>光回線一覧</h3>
+                <ul>
+                  <li>・光回線一覧</li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.about_texts{
+  h1{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  h2{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  h3{
+    margin-top: 0;
+  }
+  .about_text{
+    border: 5px solid #DDD;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .about_img{
+    margin: 30px;
+  }
+  .form_btn{
+    margin: 30px;
+  }
+}
+.auto_form{
+  h3{
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+.result_tables{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
