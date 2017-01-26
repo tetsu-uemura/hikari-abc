@@ -20,13 +20,12 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  username: hikari_abc
-  password: password
-  host: localhost
+#  username: hikari_abc
+#  host: localhost
 
 development:
   <<: *default
-  database: hikari_abc_development
+  database: hikari_consul_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
