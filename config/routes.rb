@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :home
   get '/about' => 'about#top'
   get '/provider' => 'about#provider'
   get '/cashback' => 'about#cashback'

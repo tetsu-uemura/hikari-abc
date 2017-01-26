@@ -1,0 +1,47 @@
+current directory: /var/www/hikari_abc/vender/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+/home/ubuntu/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20170124-29688-hvvzr5.rb extconf.rb 
+checking for main() in -lpthread... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /var/www/hikari_abc/vender/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/therubyracer-0.12.3/mkmf.log
+
+current directory: /var/www/hikari_abc/vender/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /var/www/hikari_abc/vender/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling value.cc
+compiling gc.cc
+compiling accessor.cc
+compiling array.cc
+compiling rr.cc
+compiling locker.cc
+compiling exception.cc
+compiling v8.cc
+compiling script.cc
+compiling heap.cc
+compiling message.cc
+compiling date.cc
+compiling string.cc
+compiling trycatch.cc
+compiling function.cc
+compiling signature.cc
+compiling object.cc
+compiling context.cc
+compiling constants.cc
+compiling external.cc
+compiling constraints.cc
+compiling handles.cc
+compiling primitive.cc
+compiling template.cc
+compiling invocation.cc
+compiling stack.cc
+compiling init.cc
+compiling backref.cc
+linking shared-object v8/init.so
+
+current directory: /var/www/hikari_abc/vender/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 init.so ./.gem.20170124-29688-1vre52/v8
