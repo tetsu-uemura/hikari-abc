@@ -25,7 +25,7 @@ default: &default
 
 development:
   <<: *default
-  database: hikari_consul_development
+  database: hikari_abc_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -86,4 +86,3 @@ production:
   database: hikari_abc_production
   username: postgres
   encording: utf8
-  password: <%= ENV['HIKARI_CONSUL_DATABASE_PASSWORD'] %>
