@@ -1,0 +1,19 @@
+current directory: /var/www/hikari_abc/vendor/bundler/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/home/ubuntu/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20170126-28315-1sq5j3x.rb extconf.rb 
+creating Makefile
+
+current directory: /var/www/hikari_abc/vendor/bundler/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /var/www/hikari_abc/vendor/bundler/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling context.c
+compiling threads.c
+compiling byebug.c
+compiling breakpoint.c
+linking shared-object byebug/byebug.so
+
+current directory: /var/www/hikari_abc/vendor/bundler/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20170126-28315-h7m1cm/byebug
