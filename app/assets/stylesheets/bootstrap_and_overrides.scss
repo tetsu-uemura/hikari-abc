@@ -17,9 +17,13 @@
   .navbar-hikari{
   @extend .navbar !optional;
     margin-bottom: 0;
+    width: 100vw;
   }
   
-
+  .row{
+	margin-left: 0;
+	margin-right: 0;
+   }
   /*.carousel-inner{
     height:340px;
   } */

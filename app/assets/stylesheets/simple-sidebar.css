@@ -66,6 +66,8 @@
     padding: 0;
     padding-bottom: 100px;
     list-style: none;
+    overflow: scroll;
+    max-height: 100vh;
 }
 
 .sidebar-nav li {
