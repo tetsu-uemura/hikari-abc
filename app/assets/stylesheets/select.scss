@@ -13,8 +13,8 @@
   }
 
   h2{
-    background-color:#CD1131;
-    color: #fff;
+    border-left: 8px solid #CD1131;
+    padding-left: 5px;
   }
   h3{
     color: #F7BD03;
@@ -28,8 +28,8 @@
     font-weight: 900;
   }
   h2{
-    background-color: #231F20;
-    color: #FFD028;
+    border-left: 8px solid #FFD028;
+    padding-left: 5px;
   }
   h3{
     color:#2174ED;
@@ -42,8 +42,8 @@
     font-weight: bold;
   }
   h2{
-    color: #fff;
-    background-color: #EB5505;
+    border-left: 8px solid #EB5505;
+    padding-left: 5px;
   }
   h3{
     color: #EB5505;
@@ -57,8 +57,8 @@
     color: #ffffff;
   }
   h2{
-    background-color: #A3D839;
-    color: #fff;
+    border-left: 8px solid #A3D839;
+    padding-left: 5px;
   }
 }
 
@@ -69,8 +69,9 @@
     font-style: italic;
   }
   h2{
-    background-color:#FFF000;
-    color: #fff;
+    border-left: 8px solid #FFF000;
+    padding-left: 5px;
+
   }
 }
 .sonet{
@@ -78,10 +79,18 @@
     color: #DC5994;
     font-weight: bold;
   }
+  h2{
+    border-left: 8px solid #DC5994;
+    padding-left: 5px;
+  }
 }
 .unext{
   .uTitle{
     color: #10ACBE;
+  }
+  h2{
+    border-left: 8px solid #10ACBE;
+    padding-left: 5px;
   }
 }
 .ocn{
@@ -90,8 +99,19 @@
     font-weight: bold;
   }
   h2{
-    background-color: #F1000D;
-    color: #fff;
+    border-left: 8px solid #F1000D;
+    padding-left: 5px;
+  }
+}
+
+.biglobe{
+  h1{
+    color:#35318E;
+  }
+
+  h2{
+    border-left: 8px solid #35318E;
+    padding-left: 5px;
   }
 }
 
